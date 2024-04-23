@@ -33,7 +33,7 @@ async fn main() {
     // This code attempts to get the port from the environment variable `PORT`
     // If it fails to get the port, it will default to "3000"
     // We then parse the `String` into a `u16`, to which if it fails, we panic
-    let port: u16 = std::env::var("PORT")
+    let port: u16 = std::env::var("PORT123")
         .unwrap_or("3000".into())
         .parse()
         .expect("failed to convert to number");
